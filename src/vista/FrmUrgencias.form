@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="vista.FrmUrgencias">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="BorderLayout" hgap="5" vgap="5">
+    <constraints>
+      <xy x="20" y="20" width="950" height="620"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+
+      <!-- PANEL IZQUIERDO -->
+      <grid id="left" layout-manager="GridBagLayout">
+        <constraints border-constraint="West"/>
+        <properties>
+          <preferredSize width="290" height="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+
+          <!-- PANEL REGISTRO -->
+          <grid id="reg" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="idea">
+              <font size="12"/>
+              <title-color color="-16777216"/>
+              <title value="Registro de Paciente"/>
+            </border>
+            <children>
+
+              <component id="l1" class="javax.swing.JLabel">
+                <constraints><grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="ID:"/></properties>
+              </component>
+              <component id="txtId" class="javax.swing.JTextField" binding="txtId">
+                <constraints><grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"><preferred-size width="150" height="-1"/></grid></constraints>
+                <properties/>
+              </component>
+
+              <component id="l2" class="javax.swing.JLabel">
+                <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Nombre:"/></properties>
+              </component>
+              <component id="txtNombre" class="javax.swing.JTextField" binding="txtNombre">
+                <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"><preferred-size width="150" height="-1"/></grid></constraints>
+                <properties/>
+              </component>
+
+              <component id="l3" class="javax.swing.JLabel">
+                <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Triage:"/></properties>
+              </component>
+              <component id="cmbTriage" class="javax.swing.JComboBox" binding="cmbTriage">
+                <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+              </component>
+
+              <component id="l4" class="javax.swing.JLabel">
+                <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Edad:"/></properties>
+              </component>
+              <component id="spEdad" class="javax.swing.JSpinner" binding="spEdad">
+                <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+              </component>
+
+              <component id="l5" class="javax.swing.JLabel">
+                <constraints><grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Prioridad (1-5):"/></properties>
+              </component>
+              <component id="spPrioridad" class="javax.swing.JSpinner" binding="spPrioridad">
+                <constraints><grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+              </component>
+
+              <component id="l6" class="javax.swing.JLabel">
+                <constraints><grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Espera (min):"/></properties>
+              </component>
+              <component id="spEspera" class="javax.swing.JSpinner" binding="spEspera">
+                <constraints><grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+              </component>
+
+              <component id="l7" class="javax.swing.JLabel">
+                <constraints><grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Riesgo (0-100):"/></properties>
+              </component>
+              <component id="txtRiesgo" class="javax.swing.JTextField" binding="txtRiesgo">
+                <constraints><grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"><preferred-size width="150" height="-1"/></grid></constraints>
+                <properties/>
+              </component>
+
+              <component id="l8" class="javax.swing.JLabel">
+                <constraints><grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Umbral Alerta:"/></properties>
+              </component>
+              <component id="txtUmbral" class="javax.swing.JTextField" binding="txtUmbral">
+                <constraints><grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"><preferred-size width="150" height="-1"/></grid></constraints>
+                <properties/>
+              </component>
+
+              <!-- Fila botones CRUD -->
+              <grid id="btnsCrud" layout-manager="FlowLayout">
+                <constraints><grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="btnAgregar" class="javax.swing.JButton" binding="btnAgregar">
+                    <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                    <properties><text value="Agregar"/></properties>
+                  </component>
+                  <component id="btnActualizar" class="javax.swing.JButton" binding="btnActualizar">
+                    <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                    <properties><text value="Actualizar"/></properties>
+                  </component>
+                  <component id="btnEliminar" class="javax.swing.JButton" binding="btnEliminar">
+                    <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                    <properties><text value="Eliminar"/></properties>
+                  </component>
+                  <component id="btnLimpiar" class="javax.swing.JButton" binding="btnLimpiar">
+                    <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                    <properties><text value="Limpiar"/></properties>
+                  </component>
+                </children>
+              </grid>
+
+            </children>
+          </grid>
+
+          <!-- PANEL BUSQUEDA -->
+          <grid id="busq" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="idea">
+              <title value="Busqueda"/>
+            </border>
+            <children>
+              <component id="txtBuscar" class="javax.swing.JTextField" binding="txtBuscar">
+                <constraints><grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"><preferred-size width="250" height="-1"/></grid></constraints>
+                <properties/>
+              </component>
+              <component id="btnBuscarId" class="javax.swing.JButton" binding="btnBuscarId">
+                <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Por ID"/></properties>
+              </component>
+              <component id="btnBuscarNombre" class="javax.swing.JButton" binding="btnBuscarNombre">
+                <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Por Nombre"/></properties>
+              </component>
+              <component id="btnBuscarTriage" class="javax.swing.JButton" binding="btnBuscarTriage">
+                <constraints><grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Por Triage"/></properties>
+              </component>
+              <component id="btnMostrarTodo" class="javax.swing.JButton" binding="btnMostrarTodo">
+                <constraints><grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Ver Todo"/></properties>
+              </component>
+            </children>
+          </grid>
+
+          <!-- PANEL REPORTES -->
+          <grid id="rep" layout-manager="FlowLayout">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="idea">
+              <title value="Reportes"/>
+            </border>
+            <children>
+              <component id="btnRiesgoPromedio" class="javax.swing.JButton" binding="btnRiesgoPromedio">
+                <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                <properties><text value="Promedio Riesgo"/></properties>
+              </component>
+              <component id="btnAlertas" class="javax.swing.JButton" binding="btnAlertas">
+                <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                <properties><text value="En Alerta"/></properties>
+              </component>
+              <component id="btnResumenTriage" class="javax.swing.JButton" binding="btnResumenTriage">
+                <constraints><vsize-policy>0</vsize-policy><hsize-policy>3</hsize-policy></constraints>
+                <properties><text value="Resumen Triage"/></properties>
+              </component>
+            </children>
+          </grid>
+
+          <!-- Spacer -->
+          <vspacer id="sp1">
+            <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/></constraints>
+          </vspacer>
+
+        </children>
+      </grid>
+
+      <!-- PANEL DERECHO -->
+      <grid id="right" layout-manager="BorderLayout" hgap="4" vgap="4">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+
+          <!-- TABLA -->
+          <grid id="tablaPanel" layout-manager="BorderLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="idea">
+              <title value="Lista de Pacientes"/>
+            </border>
+            <children>
+              <scrollpane id="scroll" binding="scrollPacientes">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="tblPacientes" class="javax.swing.JTable" binding="tblPacientes">
+                    <constraints/>
+                    <properties>
+                      <autoCreateRowSorter value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+
+          <!-- AREA REPORTES -->
+          <grid id="salidaPanel" layout-manager="BorderLayout">
+            <constraints border-constraint="South"/>
+            <properties>
+              <preferredSize width="-1" height="140"/>
+            </properties>
+            <border type="idea">
+              <title value="Salida de Reportes"/>
+            </border>
+            <children>
+              <scrollpane id="scrollRep">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="txtReportes" class="javax.swing.JTextArea" binding="txtReportes">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Monospaced" size="12"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+
+        </children>
+      </grid>
+
+    </children>
+  </grid>
+</form>
